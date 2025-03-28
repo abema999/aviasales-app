@@ -1,0 +1,59 @@
+.filter {
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+  &__title {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &:hover {
+      background-color: #f1fcff;
+    }
+  }
+
+  &__label {
+    display: flex;
+    padding: 10px 20px 10px 50px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+  &__custom-checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+    background-image: url('../../assets/checkbox-off.svg');
+  }
+
+  &__checkbox:checked + &__custom-checkbox {
+    background-image: url('../../assets/checkbox-on.svg');
+  }
+}
