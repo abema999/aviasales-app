@@ -23,10 +23,10 @@ const App = () => {
         <Header></Header>
       </header>
       <main className={styles['main']}>
-        <section>
+        <section className={styles['main__left']}>
           <Filter></Filter>
         </section>
-        <section>
+        <section className={styles['main__right']}>
           <Sort></Sort>
           <TicketsList></TicketsList>
           <MoreButton></MoreButton>

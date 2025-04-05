@@ -46,6 +46,14 @@
       color: #ffffff;
       background-color: #2196f3;
     }
+
+    &:not(.sort__item--active):hover {
+      background-color: #f1fcff;
+    }
+
+    &:not(.sort__item--active):focus-within {
+      background-color: #f1fcff;
+    }
   }
 
   &__button {
@@ -55,5 +63,6 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
+    outline: none;
   }
 }

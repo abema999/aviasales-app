@@ -21,6 +21,9 @@
     &:hover {
       background-color: #f1fcff;
     }
+    &:focus-within {
+      background-color: #f1fcff;
+    }
   }
 
   &__label {

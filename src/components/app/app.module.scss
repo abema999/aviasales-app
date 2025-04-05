@@ -1,7 +1,6 @@
 .app {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 25px;
 }
 
 .header {
@@ -15,4 +14,25 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__left {
+    @media (max-width: 767.98px) {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  &__right {
+    min-width: 500px;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      min-width: 0;
+      max-width: 500px;
+    }
+  }
 }

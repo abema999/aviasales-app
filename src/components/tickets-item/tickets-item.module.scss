@@ -34,7 +34,6 @@
   }
 
   &__wrapper {
-    min-width: 140px;
   }
 
   &__label {
@@ -49,4 +48,16 @@
     font-weight: 600;
     line-height: 21px;
   }
+}
+
+.tickets-item__way .tickets-item__wrapper:nth-child(1) {
+  width: 100px;
+}
+
+.tickets-item__way .tickets-item__wrapper:nth-child(2) {
+  width: 75px;
+}
+
+.tickets-item__way .tickets-item__wrapper:nth-child(3) {
+  width: 150px;
 }
